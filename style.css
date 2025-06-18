@@ -23,15 +23,16 @@ picture {
   --black: hsl(0, 0%, 7%);
   /* Font */
   --font-family: "DM Sans", sans-serif;
-  --fs-18: 18px;
-  --fs-26: 26px;
-  --fs-28: 28px;
-  --fs-32: 32px;
-  --fs-36: 36px;
-  --fs-40: 40px;
-  --fs-46: 46px;
-  --fs-54: 54px;
-  --fs-62: 62px;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-26: 1.625rem;
+  --fs-28: 1.75rem;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-46: 2.875rem;
+  --fs-54: 3.375rem;
+  --fs-62: 3.875rem;
   --fw-400: 400;
   --fw-500: 500;
 }
@@ -145,34 +146,6 @@ body {
   line-height: 24px;
   letter-spacing: -0.06em;
 }
-@media (min-width: 768px) {
-  .title--xl {
-    font-size: var(--fs-54);
-    line-height: 48px;
-  }
-  .title--lg {
-    font-size: var(--fs-36);
-    line-height: 30px;
-  }
-  .title--md {
-    font-size: var(--fs-28);
-    line-height: 26px;
-  }
-}
-@media (min-width: 1024px) {
-  .title--xl {
-    font-size: var(--fs-62);
-    line-height: 58px;
-  }
-  .title--lg {
-    font-size: var(--fs-40);
-    line-height: 36px;
-  }
-  .title--md {
-    font-size: var(--fs-32);
-    line-height: 28px;
-  }
-}
 /* Article 1 */
 .social-media {
   padding-inline: 32px;
@@ -255,13 +228,13 @@ body {
   max-width: 219.95px;
 }
 .attribution {
-  font-size: 11px;
+  font-size: var(--fs-16);
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--purple-500);
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
     margin-inline: 40px;
     margin-block-start: 52px;
@@ -275,6 +248,19 @@ body {
       "article5 article5"
       "article6 article6"
       "article7 article8";
+  }
+  /* Utility Classes */
+  .title--xl {
+    font-size: var(--fs-54);
+    line-height: 48px;
+  }
+  .title--lg {
+    font-size: var(--fs-36);
+    line-height: 30px;
+  }
+  .title--md {
+    font-size: var(--fs-28);
+    line-height: 26px;
   }
   /* Article 1 */
   .social-media {
@@ -323,7 +309,7 @@ body {
     padding-inline: 24px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   body {
     margin-inline: 160px;
     margin-block-start: 83px;
@@ -335,6 +321,19 @@ body {
       "article7 article2 article3 article4"
       "article8 article2 article3 article4"
       "article8 article6 article5 article5";
+  }
+  /* Utility Classes */
+  .title--xl {
+    font-size: var(--fs-62);
+    line-height: 58px;
+  }
+  .title--lg {
+    font-size: var(--fs-40);
+    line-height: 36px;
+  }
+  .title--md {
+    font-size: var(--fs-32);
+    line-height: 28px;
   }
   /* Article 2 */
   .manage {
