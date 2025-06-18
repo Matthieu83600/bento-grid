@@ -159,6 +159,20 @@ body {
     line-height: 26px;
   }
 }
+@media (min-width: 1024px) {
+  .title--xl {
+    font-size: var(--fs-62);
+    line-height: 58px;
+  }
+  .title--lg {
+    font-size: var(--fs-40);
+    line-height: 36px;
+  }
+  .title--md {
+    font-size: var(--fs-32);
+    line-height: 28px;
+  }
+}
 /* Article 1 */
 .social-media {
   padding-inline: 32px;
@@ -320,5 +334,54 @@ body {
       "article7 article2 article3 article4"
       "article8 article2 article3 article4"
       "article8 article6 article5 article5";
+  }
+  /* Article 2 */
+  .manage {
+    padding: 24px 0 0 24px;
+  }
+  .manage__img {
+    margin-right: -80px;
+  }
+  .manage__title {
+    margin-block-start: 0;
+    margin-inline-end: 50px;
+  }
+  /* Article 3 */
+  .maintain {
+    padding: 24px 24px 0 24px;
+  }
+  .maintain__title {
+    margin-block-end: 0;
+    margin-inline-end: 50px;
+  }
+  .maintain__img {
+    margin-bottom: -100px;
+  }
+  /* Article 4 */
+  .schedule {
+    text-align: left;
+  }
+  .schedule__img {
+    margin-right: -152px;
+  }
+  .schedule__text {
+    margin-inline: 0;
+  }
+  /* Article 5 */
+  .grow {
+    padding-inline: 24px;
+  }
+  /* Article 6 */
+  .audience {
+    flex-direction: column;
+  }
+  /* Article 7 */
+  .create {
+    padding: 32px;
+    justify-content: center;
+  }
+  /* Article 8 */
+  .write {
+    justify-content: space-between;
   }
 }
