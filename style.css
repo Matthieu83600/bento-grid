@@ -36,7 +36,7 @@ picture {
   --fw-500: 500;
 }
 body {
-  background-color: #dcdeec;
+  background-color: whitesmoke;
   display: grid;
   place-items: center;
   min-height: 100vh;
@@ -306,6 +306,7 @@ body {
   .grow {
     flex-direction: row;
     padding-inline: 81.66px;
+    text-align: left;
   }
   /* Article 6 */
   .audience {
