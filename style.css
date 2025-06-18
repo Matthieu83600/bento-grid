@@ -102,6 +102,8 @@ body {
   overflow: hidden;
   gap: 24px;
   padding: 24px;
+  height: 100%;
+  width: 100%;
 }
 /* Utility Classes */
 .article--centered {
@@ -143,6 +145,20 @@ body {
   line-height: 24px;
   letter-spacing: -0.06em;
 }
+@media (min-width: 768px) {
+  .title--xl {
+    font-size: var(--fs-54);
+    line-height: 48px;
+  }
+  .title--lg {
+    font-size: var(--fs-36);
+    line-height: 30px;
+  }
+  .title--md {
+    font-size: var(--fs-28);
+    line-height: 26px;
+  }
+}
 /* Article 1 */
 .social-media {
   padding-inline: 32px;
@@ -166,7 +182,7 @@ body {
   padding: 16px;
 }
 .manage__img {
-  max-width: 316.06px;
+  max-width: 316.08px;
 }
 /* Article 3 */
 .maintain {
@@ -181,6 +197,7 @@ body {
 /* Article 4 */
 .schedule {
   padding: 32px;
+  text-align: center;
 }
 .schedule__img {
   max-width: 308.06px;
@@ -229,4 +246,79 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (min-width: 768px) {
+  body {
+    margin-inline: 40px;
+    margin-block-start: 52px;
+    margin-block-end: 75.69px;
+  }
+  .wrapper {
+    grid-template-areas:
+      "article1 article1"
+      "article2 article3"
+      "article4 article4"
+      "article5 article5"
+      "article6 article6"
+      "article7 article8";
+  }
+  /* Article 1 */
+  .social-media {
+    padding: 32px;
+  }
+  /* Article 2 */
+  .manage {
+    padding: 24px 0 24px 24px;
+  }
+  .manage__img {
+    align-self: self-end;
+  }
+  .manage__title {
+    margin-block-start: 54.46px;
+    margin-inline-end: 96px;
+  }
+  /* Article 3 */
+  .maintain {
+    padding: 24px 53px 0 24px;
+  }
+  /* Article 4 */
+  .schedule__img {
+    max-width: 357.3px;
+  }
+  .schedule__text {
+    margin-inline: 132.5px;
+  }
+  /* Article 5 */
+  .grow {
+    flex-direction: row;
+    padding-inline: 81.66px;
+  }
+  /* Article 6 */
+  .audience {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 24px;
+  }
+  .audience__img {
+    height: 66.56px;
+  }
+  /* Article 7 */
+  .create {
+    padding-block: 75.07px;
+    padding-inline: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    margin-inline: 160px;
+    margin-block-start: 83px;
+    margin-block-end: 65px;
+  }
+  .wrapper {
+    grid-template-areas:
+      "article7 article1 article1 article4"
+      "article7 article2 article3 article4"
+      "article8 article2 article3 article4"
+      "article8 article6 article5 article5";
+  }
 }
